@@ -28,14 +28,14 @@ void ARTSBasicsPlayerController::SetupInputComponent()
 	// set up gameplay key bindings
 	Super::SetupInputComponent();
 
-	InputComponent->BindAction("SetDestination", IE_Pressed, this, &ARTSBasicsPlayerController::OnSetDestinationPressed);
+	/*InputComponent->BindAction("SetDestination", IE_Pressed, this, &ARTSBasicsPlayerController::OnSetDestinationPressed);
 	InputComponent->BindAction("SetDestination", IE_Released, this, &ARTSBasicsPlayerController::OnSetDestinationReleased);
 
 	// support touch devices 
 	InputComponent->BindTouch(EInputEvent::IE_Pressed, this, &ARTSBasicsPlayerController::MoveToTouchLocation);
 	InputComponent->BindTouch(EInputEvent::IE_Repeat, this, &ARTSBasicsPlayerController::MoveToTouchLocation);
 
-	InputComponent->BindAction("ResetVR", IE_Pressed, this, &ARTSBasicsPlayerController::OnResetVR);
+	InputComponent->BindAction("ResetVR", IE_Pressed, this, &ARTSBasicsPlayerController::OnResetVR);*/
 }
 
 void ARTSBasicsPlayerController::OnResetVR()
