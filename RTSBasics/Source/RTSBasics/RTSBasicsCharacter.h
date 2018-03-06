@@ -18,7 +18,7 @@ public:
 	virtual void Tick(float DeltaSeconds) override;
 	
 	/** Returns CursorToWorld subobject **/
-	FORCEINLINE class UDecalComponent* GetCursorToWorld() { return CursorToWorld; }
+	FORCEINLINE class UDecalComponent* GetSelectionDecal() { return SelectionDecal; }
 
 private:
 
@@ -26,6 +26,6 @@ private:
 
 	/** A decal that projects to the cursor location. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-	class UDecalComponent* CursorToWorld;
+	class UDecalComponent* SelectionDecal;
 };
 

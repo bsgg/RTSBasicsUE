@@ -49,9 +49,9 @@ void ARTSBasicsPlayerController::MoveToMouseCursor()
 	{
 		if (ARTSBasicsCharacter* MyPawn = Cast<ARTSBasicsCharacter>(GetPawn()))
 		{
-			if (MyPawn->GetCursorToWorld())
+			if (MyPawn->GetSelectionDecal())
 			{
-				UNavigationSystem::SimpleMoveToLocation(this, MyPawn->GetCursorToWorld()->GetComponentLocation());
+				UNavigationSystem::SimpleMoveToLocation(this, MyPawn->GetSelectionDecal()->GetComponentLocation());
 			}
 		}
 	}
