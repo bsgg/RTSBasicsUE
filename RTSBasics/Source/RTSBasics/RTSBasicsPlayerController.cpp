@@ -40,7 +40,7 @@ void ARTSBasicsPlayerController::SetupInputComponent()
 
 void ARTSBasicsPlayerController::OnResetVR()
 {
-	UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition();
+	UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition(); 
 }
 
 void ARTSBasicsPlayerController::MoveToMouseCursor()
